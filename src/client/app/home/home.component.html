@@ -1,0 +1,39 @@
+
+<div class="home-card-container">
+  <md-card>
+  <md-card-header>
+   <md-card-title> <font size="5"> About AngularJS 2.0 </font> </md-card-title>   
+ 
+      <img md-card-avatar src="assets/a.png">
+   </md-card-header>
+   <md-card-content>
+      <md-card-subtitle>Features & Benefits of Angular 2.0</md-card-subtitle>
+        <p>The new Angular version is designed with a mobile-first approach, 
+        including mobile-specific features like touch support, low memory 
+        and bandwidth usage on mobile devices, performance tuning and material
+         design UI elements etc. </p>
+   </md-card-content>
+  </md-card>
+</div>
+
+<div class="home-card-container">
+  <md-card>
+    <md-card-title>Adding Elements example Angular 2.</md-card-title>
+    <md-card-content>
+      <p> Add to the list yourself.</p>
+      <form (submit)="addName()" class="home-form">
+        <div>
+          <md-input [(ngModel)]="newName" name="newName" class="home-input" placeholder="Awesome Computer Scientist" ngDefaultControl></md-input>
+          <button md-raised-button color="primary" type="submit" class="home-button">ADD</button>
+        </div>
+      </form>
+      <md-list class="home-list">
+        <md-list-item *ngFor="let name of names">
+          <h3 md-line>{{name}}</h3>
+          <p md-line class="demo-secondary-text">secondary text</p>
+        </md-list-item>
+      </md-list>
+    </md-card-content>
+  </md-card>
+</div>
+

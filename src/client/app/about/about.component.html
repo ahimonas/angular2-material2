@@ -1,0 +1,100 @@
+
+<md-sidenav-layout> 
+  <md-sidenav align="end" mode="side" opened #sidenav>
+    <md-tab-group>
+      <md-tab> 
+        <template md-tab-label>Details</template> 
+        <template md-label-content>
+        </template> 
+      </md-tab>
+
+      <md-tab> 
+        <template md-tab-label>Details</template> 
+        <template md-label-content></template> 
+      </md-tab>
+    </md-tab-group>        
+              <button md-raised-button (click)="sidenav.close()" color = "accent">  Close</button>
+
+  </md-sidenav> 
+
+
+      <md-card  *ngFor="let dog of dogs">
+               <md-card-header>
+      <img md-card-avatar src="assets/dogs/{{dog.name}}.png">
+      <md-card-title>Name: {{dog.name}}</md-card-title>
+      <md-card-subtitle>Age: {{dog.age}}</md-card-subtitle>
+   </md-card-header>
+      </md-card> 
+
+</md-sidenav-layout> 
+<!--
+<md-grid-list cols="4"  [style.background]="'lightblue'" rowHeight="200px">>
+   <md-grid-tile> <img src="assets/dogs/Mal.png"></md-grid-tile>
+   <md-grid-tile>Two</md-grid-tile>
+   <md-grid-tile>Three</md-grid-tile>
+   <md-grid-tile>Four</md-grid-tile>
+</md-grid-list>
+
+
+   <md-grid-list cols="4" rowHeight="200px">
+      <md-grid-tile *ngFor="let dog of dogs" [rowspan]="dog.rows">
+        <img src="assets/dogs/{{dog.name}}.png" alt="photo of {{dog.name}}">
+
+      </md-grid-tile>
+
+</md-grid-list>
+-->
+
+
+
+
+
+<div class="about-card-container">
+    <md-card class="about-card">
+
+
+       <md-card-header>
+      <img md-card-avatar src="assets/yy.jpg">
+      <md-card-title>Benefits</md-card-title>
+      <md-card-subtitle>Additional Angular 2.0 info</md-card-subtitle>
+   </md-card-header>
+        <img md-card-image src ="assets/yy.jpg">
+   <md-card-content>
+      <p>Progressive Web Application based on a Modern Web Stack by the Angular2 team at Google.
+       Progressive Web Applications provide for a native web app like experiencebut when they are run on a browser.
+       One codebases  for iOS, Android and the Web. 
+Progressive loading and rendering. 
+Work as a web app without installs on phones. 
+Application shell renders immediately. 
+</p>
+    </md-card-content>
+  </md-card>
+      
+
+</div>
+
+
+<div class="about-card-container">
+    <md-card class="about-card">
+    <p>
+    Angular 2 Seed is a starter project that implements best practices in coding, building and testing Angular 2 apps.
+    <p>
+      <h2>Features</h2>
+      <ul>
+        <li>Ready to go, statically typed build system using Gulp for working with TypeScript.</li>
+        <li>Production and development builds.</li>
+        <li>Sample unit tests with Jasmine and Karma including code coverage via Istanbul.</li>
+        <li>End-to-end tests with Protractor.</li>
+        <li>Development server with live reload.</li>
+        <li>TypeScript definition management using Typings.</li>
+        <li>Basic Service Worker, which implements "Cache then network strategy".</li>
+      </ul>
+    </md-card>
+</div>
+
+
+
+
+
+
+

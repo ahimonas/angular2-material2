@@ -1,0 +1,68 @@
+<!-- <sd-toolbar></sd-toolbar>
+<sd-navbar></sd-navbar>
+<router-outlet></router-outlet>
+<md-sidenav-layout id="sidenavid" fullscreen [style.zIndex]="getStyle()">
+-->
+<md-sidenav-layout id="sidenavid" fullscreen>
+
+        <md-sidenav #sidenav mode="side" (click)="sidenav.close()" >  
+            <h3> MARS Main Menu</h3>
+  	       <md-nav-list>
+            <a md-list-item routerLink="" >
+                <md-icon md-list-icon>home</md-icon>
+                <span md-line>Home Page</span>
+                <span md-line class="secondary">Home Page</span>
+            </a>
+            <a md-list-item routerLink="aboutcopy" >
+                <md-icon md-list-icon>create</md-icon>
+                <span md-line>Add an Incident</span>
+                <span md-line class="secondary">Add a New Incident</span>
+               </a> 
+            <a md-list-item routerLink="about" >
+                <md-icon md-list-icon>photo library</md-icon>
+                <span md-line>Photos</span>
+                <span md-line class="secondary">Photo Library</span>
+            </a>
+          <a md-list-item routerLink="signupform" >
+                <md-icon md-list-icon>search</md-icon>
+                <span md-line>Search the Database</span>
+                <span md-line class="secondary">Search Incidents</span>
+            </a>
+            <a md-list-item routerLink="signupform" >
+                <md-icon md-list-icon>account_circle</md-icon>
+                <span md-line>Login as Administrator</span>
+                <span md-line class="secondary">Maintain Incidents</span>
+            </a>
+                <a md-list-item routerLink="/about" >
+                <md-icon md-list-icon>info</md-icon>
+                <span md-line>About</span>
+                <span md-line class="secondary">About the MARS application</span>
+            </a>
+          </md-nav-list>  
+        </md-sidenav>
+        <md-toolbar color="primary">
+
+              <!--  <button md-icon-button (click)="sidenav.open()" (click)="showStyle = !showStyle;" > -->
+               <button md-icon-button (click)="sidenav.open()" >
+                <!--   <button md-icon-button (click)=clicked($event)> -->
+
+                <svg style="width:24px;height:24px" viewBox="0 0 24 24">
+                  <path fill="currentColor" d="M3,6H21V8H3V6M3,11H21V13H3V11M3,16H21V18H3V16Z" />
+                </svg>
+              </button>
+              Malfunction/Abnormality Form
+        </md-toolbar>
+
+ <sd-navbar></sd-navbar>
+<router-outlet></router-outlet>
+ </md-sidenav-layout>
+
+
+ 
+    <br>
+    <br>
+ <!--    (app.component.html) -->
+      
+
+
+

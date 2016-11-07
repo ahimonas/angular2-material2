@@ -1,0 +1,152 @@
+
+
+
+<md-sidenav-layout>
+    <md-sidenav #sidenav mode="side" class="app-sidenav">
+        Sidenav
+    </md-sidenav>
+
+    <div class="app-content">
+        <md-card>
+            <button md-button>FLAT</button>
+            <button md-raised-button md-tooltip="This is a tooltip!">RAISED</button>
+            <button md-raised-button color="primary">PRIMARY RAISED</button>
+            <button md-raised-button color="accent">ACCENT RAISED</button>
+        </md-card>
+        <md-card>
+            <md-checkbox>Unchecked</md-checkbox>
+            <md-checkbox [checked]="true">Checked</md-checkbox>
+            <md-checkbox [indeterminate]="true">Indeterminate</md-checkbox>
+            <md-checkbox [disabled]="true">Disabled</md-checkbox>
+        </md-card>
+        <md-card class="app-input-section">
+            <md-input placeholder="First name"></md-input>
+            <md-input #nickname placeholder="Nickname" maxlength="50">
+
+            </md-input>
+            <md-input>
+                <md-placeholder>
+                    <i class="material-icons app-input-icon">android</i> Favorite phone
+                </md-placeholder>
+            </md-input>
+            <md-input placeholder="Motorcycle model">
+                <span md-prefix>
+		          <i class="material-icons app-input-icon">motorcycle</i>
+		        </span>
+            </md-input>
+        </md-card>
+        <md-card>
+            <label>
+                Indeterminate progress-bar
+                <md-progress-bar class="app-progress" mode="indeterminate" aria-label="Indeterminate progress-bar example"></md-progress-bar>
+            </label>
+            <label>
+                Determinate progress bar - {{progress}}%
+                <md-progress-bar class="app-progress" color="accent" mode="determinate" [value]="progress" aria-label="Determinate progress-bar example"></md-progress-bar>
+            </label>
+        </md-card>
+        <md-card>
+            <md-tab-group>
+                <md-tab>
+                    <template md-tab-label>
+                        Earth
+                    </template>
+                    <template md-tab-content>
+                        <md-card>
+                            <button md-button>FLAT</button>
+                            <button md-raised-button md-tooltip="This is a tooltip!">RAISED</button>
+                            <button md-raised-button color="primary">PRIMARY RAISED</button>
+                            <button md-raised-button color="accent">ACCENT RAISED</button>
+                        </md-card>
+                    </template>
+                </md-tab>
+                <md-tab>
+                    <template md-tab-label>
+                        Fire
+                    </template>
+                    <template md-tab-content>
+                        <md-card>
+                            <button md-raised-button md-tooltip="This is a tooltip!">RAISED</button>
+                        </md-card>
+                    </template>
+                </md-tab>
+            </md-tab-group>
+        </md-card>
+    </div>
+</md-sidenav-layout>
+
+
+
+<!-- 
+
+  <div class="about-card-container">
+    <md-card class="about-card">
+    <p>
+    Angular 2 Seed is a starter project that implements best practices in coding, building and testing Angular 2 apps.
+    <p>
+      <h2>Features</h2>
+      <ul>
+        <li>Im the builder. </li>
+      
+      </ul>
+    </md-card>
+</div>
+
+
+
+
+<md-card>
+  <md-card-header>
+   <md-card-title> <font size="5"> About AngularJS 2.0 </font> </md-card-title>   
+ 
+      <img md-card-avatar src="./a.png">
+   </md-card-header>
+   <md-card-content>
+      <md-card-subtitle>Features & Benefits of Angular 2.0</md-card-subtitle>
+        <p>The new Angular version is designed with a mobile-first approach, 
+        including mobile-specific features like touch support, low memory 
+        and bandwidth usage on mobile devices, performance tuning and material
+         design UI elements etc. </p>
+   </md-card-content>
+    
+</md-card>
+
+
+<md-card>
+   <md-card-title-group>
+      <img md-card-lg-image src="./t.jpg">
+      <md-card-title>Observables</md-card-title>
+      <md-card-subtitle>Asynchronous Data Streams</md-card-subtitle>
+   </md-card-title-group>
+</md-card>
+
+
+        <md-card>
+            <md-tab-group>
+                <md-tab>
+                    <template md-tab-label>
+                        Earth
+                    </template>
+                    <template md-tab-content>
+                        <md-card>
+                            <button md-button>FLAT</button>
+                            <button md-raised-button md-tooltip="This is a tooltip!">RAISED</button>
+                            <button md-raised-button color="primary">PRIMARY RAISED</button>
+                            <button md-raised-button color="accent">ACCENT RAISED</button>
+                        </md-card>
+                    </template>
+                </md-tab>
+                <md-tab>
+                    <template md-tab-label>
+                        Fire
+                    </template>
+                    <template md-tab-content>
+                        <md-card>
+                            <button md-raised-button md-tooltip="This is a tooltip!">RAISED</button>
+                        </md-card>
+                    </template>
+                </md-tab>
+            </md-tab-group>
+</md-card>
+
+--> 
